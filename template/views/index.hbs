@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/cloud.png" type="image/png">
+    <script src="js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    {{>navbar}}
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="left-col">
+                    <p>weather app</p>
+                    <h1>Check out the Weather app and get the current weather information of your city</h1>
+                    <a href="/weather"><button>Check now</button></a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="right-col">
+                    <div class="imageContainer">
+                        <img src="/images/quotes.jpg" alt="" width="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="left-col">
+                    <p>quotes app</p>
+                    <h1>Check out the Quotes section and get famous quotes</h1>
+                    <a href="/quotes"><button>Check now</button></a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="right-col">
+                    <div class="imageContainer">
+                        <img src="/images/quotes.jpg" alt="" width="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+</body>
+
+</html>

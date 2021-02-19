@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/cloud.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {{>navbar}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mid">
+                <div class="col-5 search-bar">
+                    <form action="">
+                        <input type="text" id="cityName" autocomplete="off" placeholder="Enter city name">
+                        <input type="submit" value="search" id="submitButton">
+                    </form>
+                </div>
+                <div class='tempInfo'>
+                    <div class="topInfo">
+                        <p id="day">Thursday</p>
+                        <p id="date">18/02/2021</p>
+                        <p id='errorMsg' class="dataHide"></p>
+                    </div>
+                </div>
+                <div class="mainInfo dataHide">
+                    <p id="location"></p>
+                    <p><span id="temperature"></span><span>&#176</span>C</p>
+                    <p id="tempStatus"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="js/main.js">
+
+        
+    </script>
+
+</body>
+
+</html>
